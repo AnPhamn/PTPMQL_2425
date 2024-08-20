@@ -9,11 +9,6 @@ public class StudentController : Controller
         return View();
     }
 
-    private IActionResult View()
-    {
-        throw new NotImplementedException();
-    }
-
     [HttpPost]
     public IActionResult Index(string MaSinhVien, string HoTen)
     {
