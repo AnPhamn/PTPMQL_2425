@@ -1,0 +1,9 @@
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+/*Phạm Thanh An - 2021050057
