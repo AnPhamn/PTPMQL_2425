@@ -1,7 +1,8 @@
-using DEMOMVC.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DemoMvc.Models
+namespace DEMOMVC.Models
 {
+    [Table("Employee")]
     public class Employee : Person
     {
         public string? Age { get; set; }

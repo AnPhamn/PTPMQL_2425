@@ -1,4 +1,4 @@
-@model IEnumerable<DEMOMVC.Models.Person>
+@model IEnumerable<DEMOMVC.Models.Employee>
 
 @{
     ViewData["Title"] = "Index";
@@ -21,6 +21,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.queQuan)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sex)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -35,6 +41,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.queQuan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.CCCDID">Edit</a> |

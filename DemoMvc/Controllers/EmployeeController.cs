@@ -1,9 +1,9 @@
-namespace Name.Controllers
-{
-    using DemoMvc.Models;
+    using DEMOMVC.Models;
     using DEMOMVC.Data;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
+namespace DEMOMVC.Controllers
+{
 
     public class EmployeeController : Controller
     {
@@ -14,7 +14,7 @@ namespace Name.Controllers
         }
         public async Task<IActionResult> Index()
         {
-               return View(await _context.Employees.ToListAsync());
+               return View(await _context.Employee.ToListAsync());
         }
         public async Task<IActionResult> Details(string id)
         {
@@ -22,7 +22,7 @@ namespace Name.Controllers
             {
                 return NotFound();
             }
-            var employee = await _context.Employees.FirstOrDefaultAsync(x => x.CCCDID == id);
+            var employee = await _context.Employee.FirstOrDefaultAsync(x => x.CCCDID == id);
             if (employee == null)
             {
                 return NotFound();
@@ -48,7 +48,28 @@ namespace Name.Controllers
                 return RedirectToAction(nameof (Index));
             }
             return View(employee);
-            }
+         }
 
+         public async Task<IActionResult> Edit(string id)
+        {
+            
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var employee = await _context.Employee.FindAsync(id);
+            if(employee == null)
+            {
+                _context.Employee.Remove(employee); 
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
+         
+         private bool EmployeeExists(string id)
+         {
+            return _context.Employee.Any(e => e.CCCDID == id);
+         }
+
+     }
   }       

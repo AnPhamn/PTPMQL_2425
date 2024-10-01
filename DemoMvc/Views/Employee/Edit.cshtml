@@ -1,4 +1,4 @@
-@model DEMOMVC.Models.Person
+@model DEMOMVC.Models.Employee
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,19 +6,19 @@
 
 <h1>Edit</h1>
 
-<h4>Person</h4>
+<h4>Employee</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="CCCDID" />
+            <input type="hidden" asp-for="CCCDID">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="CCCDID" />
             <div class="form-group">
-                <label asp-for="CCCDID" class="control-label"></label>
-                <input asp-for="CCCDID" class="form-control" />
-                <span asp-validation-for="CCCDID" class="text-danger"></span>
+                <label asp-for="hoVaten" class="control-label"></label>
+                <input asp-for="hoVaten" class="form-control" />
+                <span asp-validation-for="hoVaten" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="queQuan" class="control-label"></label>
@@ -26,9 +26,9 @@
                 <span asp-validation-for="queQuan" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="hoVaten" class="control-label"></label>
-                <input asp-for="hoVaten" class="form-control" />
-                <span asp-validation-for="hoVaten" class="text-danger"></span>
+                <label asp-for="CCCDID" class="control-label"></label>
+                <input asp-for="CCCDID" class="form-control" />
+                <span asp-validation-for="CCCDID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

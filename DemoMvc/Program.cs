@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using DEMOMVC.Data;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
  options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") 

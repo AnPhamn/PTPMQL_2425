@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using DemoMvc.Models;
 using DEMOMVC.Models;
 namespace DEMOMVC.Data
 {
@@ -8,12 +7,6 @@ namespace DEMOMVC.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options):base(options)
         {}
         public DbSet<Person> Person { get; set;} 
-         public DbSet<Employee> Employees { get; set;} 
-   
-   
-
-       
-
-       
+         public DbSet<Employee> Employee { get; set;}      
     }
 }
