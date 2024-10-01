@@ -7,8 +7,8 @@ namespace DEMOMVC.Models
     public class Person
 {
     [Key]
-    public string? PersonId { get; set; }
-    public string? FullName { get; set; }
-    public string? Address { get; set; }
+    public string? CCCDID { get; set; }
+    public string? hoVaten { get; set; }
+    public string? queQuan { get; set; }
 }
 }
