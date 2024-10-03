@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj": {}
+    "D:\\PTPMQL\\DemoMvc\\DEMOMVC.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj": {
+    "D:\\PTPMQL\\DemoMvc\\DEMOMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj",
-        "projectName": "DemoMvc",
-        "projectPath": "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj",
+        "projectUniqueName": "D:\\PTPMQL\\DemoMvc\\DEMOMVC.csproj",
+        "projectName": "DEMOMVC",
+        "projectPath": "D:\\PTPMQL\\DemoMvc\\DEMOMVC.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "D:\\PTPMQL\\DemoMvc\\obj\\",
         "projectStyle": "PackageReference",

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DEMOMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241001080729_Create_table_Person")]
-    partial class Create_table_Person
+    [Migration("20241002085847_Create_table_Employee")]
+    partial class Create_table_Employee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace DEMOMVC.Migrations
                     b.Property<string>("Age")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Sex")
+                    b.Property<string>("EmployeeID")
                         .HasColumnType("TEXT");
 
                     b.ToTable("Employee");

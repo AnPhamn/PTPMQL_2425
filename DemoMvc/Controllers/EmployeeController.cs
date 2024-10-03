@@ -2,9 +2,9 @@
     using DEMOMVC.Data;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
-namespace DEMOMVC.Controllers
-{
 
+namespace Name.Controllers
+{
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -72,4 +72,4 @@ namespace DEMOMVC.Controllers
          }
 
      }
-  }       
+  }

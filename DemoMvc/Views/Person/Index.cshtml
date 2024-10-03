@@ -21,12 +21,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.queQuan)
             </th>
+            
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.CCCDID)
             </td>
@@ -36,6 +38,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.queQuan)
             </td>
+          
             <td>
                 <a asp-action="Edit" asp-route-id="@item.CCCDID">Edit</a> |
                 <a asp-action="Delete" asp-route-id="@item.CCCDID">Delete</a>

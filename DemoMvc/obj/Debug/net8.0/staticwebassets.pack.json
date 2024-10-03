@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\PTPMQL\\DemoMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DemoMvc.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DemoMvc.bundle.scp.css"
+      "Id": "D:\\PTPMQL\\DemoMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DEMOMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DEMOMVC.bundle.scp.css"
     },
     {
       "Id": "D:\\PTPMQL\\DemoMvc\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DemoMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DEMOMVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DemoMvc.props",
-      "PackagePath": "build\\DemoMvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DEMOMVC.props",
+      "PackagePath": "build\\DEMOMVC.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DemoMvc.props",
-      "PackagePath": "buildMultiTargeting\\DemoMvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DEMOMVC.props",
+      "PackagePath": "buildMultiTargeting\\DEMOMVC.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DemoMvc.props",
-      "PackagePath": "buildTransitive\\DemoMvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DEMOMVC.props",
+      "PackagePath": "buildTransitive\\DEMOMVC.props"
     }
   ],
   "ElementsToRemove": []
